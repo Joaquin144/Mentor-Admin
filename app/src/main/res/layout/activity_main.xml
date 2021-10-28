@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/start"
+
+        android:layout_height="wrap_content"
+        android:text="start"
+        app:layout_constraintEnd_toStartOf="@+id/ebooksSize"
+        app:layout_constraintStart_toEndOf="@+id/videosSize"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/videosSize"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ebooksSize"
+        android:layout_marginTop="32dp"
+        android:minWidth="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videosSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/idInstructorBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Instructor Bio"
+                android:inputType="textPersonName"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFC107"
+                android:textColorHint="@color/teal_700"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/idInstructorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Instructor name"
+                android:inputType="textPersonName"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#F44336"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+            <!--CourseId is automatic-->
+            <EditText
+                android:id="@+id/idDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFC107"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/idHomeLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="HomeLink"
+                android:inputType="textUri"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#F44336"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/idImageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="ImageUrl"
+                android:inputType="textUri"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFC107"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/idNameOfCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Name of course"
+                android:inputType="textPersonName"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#F44336"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/OrderNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Order number"
+                android:inputType="text"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFC107"
+                android:textColorHint="#2196F3"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/idVideoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Video links"
+                android:inputType="textMultiLine"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#F44336"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/idEbooksLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Ebooks links"
+                android:inputType="textMultiLine"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFC107"
+                android:textColorHint="#FFC107"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:text="Submit it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
