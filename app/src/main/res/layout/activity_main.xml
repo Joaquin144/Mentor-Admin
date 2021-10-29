@@ -19,23 +19,27 @@
 
     <EditText
         android:id="@+id/videosSize"
+        android:hint="videos"
         android:layout_marginStart="80dp"
         android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/ebooksSize"
         android:layout_marginTop="32dp"
+        android:hint="ebooks"
         android:minWidth="30dp"
         android:layout_marginEnd="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -184,6 +188,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
+        android:enabled="false"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"

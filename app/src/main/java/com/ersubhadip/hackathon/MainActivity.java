@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
         });
         Log.d("####",ebookLen + "  " + vidLen);
         submitBtn=findViewById(R.id.button);
-        //Process:-Take all inputs and update them in DB, get course
-        //id from stats collections for easy user
-        //syncronization
+        /*Process:-Take all inputs and update them in DB, get course
+        id from stats collections for easy user syncronization
+         */
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     if(documentSnapshot.exists()){
                                         String temp= documentSnapshot.getString("total");
+                                        int vibhu = Integer.parseInt(temp); vibhu++;
                                         temp="op"+temp;
                                         map.put("courseId",temp);
                                         Log.d("####",temp);
@@ -138,6 +139,10 @@ public class MainActivity extends AppCompatActivity {
                                         //Log.d("####",kismeinDataBhare);
                                         //To DO ~~~~~~~~~~
                                         //Update the collection stats otherwise this all won't work
+                                        String updateStatsTemp = Integer.toString(vibhu);
+                                        updateStatsTemp="0"+updateStatsTemp;
+                                        firestore.collection("adminStats").document("allCourses").update("total",updateStatsTemp);
+                                        Log.d("####","updated stats to "+updateStatsTemp);
                                     }
                                     else{
                                         Toast.makeText(MainActivity.this, "DB stats error. Tally it.", Toast.LENGTH_SHORT).show();
