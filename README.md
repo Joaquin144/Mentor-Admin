@@ -37,4 +37,4 @@ This app will allow admins of Mentor app to upload courses to the Server. The ol
 
 - <a href="https://mega.nz/file/XwcAEDIL#U8hqdtOFRHRtxJxdTWkZ-LgRjJst-c2ZHfF8hD8_S5o" title="Mentor App (for Users only)" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Mentor apk</a>
 
-- <a href="https://mega.nz/file/XwcAEDIL#U8hqdtOFRHRtxJxdTWkZ-LgRjJst-c2ZHfF8hD8_S5o" title="Mentor Admin App (for Admins only)" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Mentor-Admin apk</a>
+- <a href="https://drive.google.com/file/d/1hPr7_WvzGu18xXZ7ht2y_3W9Sq5JgKiP/view?usp=sharing" title="Mentor Admin App (for Admins only)" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Mentor-Admin apk</a>
